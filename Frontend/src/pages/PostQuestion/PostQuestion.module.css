@@ -1,0 +1,521 @@
+
+.page {
+  width: 100%;
+  min-height: 100%;
+  padding: 28px 22px 45px;
+  background: #f8fafc;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Page heading */
+
+.pageHeading {
+  margin-bottom: 22px;
+}
+
+.eyebrow {
+  display: block;
+  margin-bottom: 8px;
+  color: #f97316;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+}
+
+.pageHeading h1 {
+  margin: 0 0 7px;
+  color: #172033;
+  font-size: 25px;
+  font-weight: 750;
+}
+
+.pageHeading p {
+  max-width: 650px;
+  margin: 0;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* Guidelines card */
+
+.guidelines {
+  margin-bottom: 22px;
+  padding: 17px 20px;
+  border: 1px solid #e2e8f0;
+  border-left: 3px solid #f97316;
+  border-radius: 7px;
+  background: #f1f5f9;
+}
+
+.guidelines h2 {
+  margin: 0 0 8px;
+  color: #334155;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.guidelines p {
+  margin: 0 0 12px;
+  color: #64748b;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.guidelines h3 {
+  margin: 12px 0 6px;
+  color: #334155;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.guidelines ul {
+  display: grid;
+  gap: 4px;
+  margin: 0;
+  padding-left: 17px;
+  color: #475569;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.guidelines strong {
+  color: #334155;
+}
+
+/* Form */
+
+.form {
+  padding: 22px 24px;
+  border: 1px solid #e5eaf0;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 2px 7px rgba(15, 23, 42, 0.025);
+}
+
+.formGroup {
+  margin-bottom: 19px;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 4px;
+  color: #334155;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.fieldDescription {
+  margin: 0 0 7px;
+  color: #94a3b8;
+  font-size: 9px;
+  line-height: 1.5;
+}
+
+.formGroup input {
+  display: block;
+  width: 100%;
+  height: 36px;
+  padding: 8px 11px;
+  border: 1px solid #cbd5e1;
+  border-radius: 5px;
+  outline: none;
+  background: #ffffff;
+  color: #334155;
+  font-family: inherit;
+  font-size: 11px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.formGroup input:focus {
+  border-color: #f97316;
+  box-shadow: 0 0 0 2px rgba(249, 115, 22, 0.1);
+}
+
+.formGroup input::placeholder,
+.formGroup textarea::placeholder {
+  color: #a1a1aa;
+}
+
+.invalidInput {
+  border-color: #f87171 !important;
+}
+
+.fieldError {
+  margin: 5px 0 0;
+  color: #ef4444;
+  font-size: 9px;
+  line-height: 1.4;
+}
+
+/* Text editor */
+
+.editor {
+  overflow: hidden;
+  border: 1px solid #cbd5e1;
+  border-radius: 5px;
+  background: #ffffff;
+  transition: border-color 0.2s;
+}
+
+.editor:focus-within {
+  border-color: #f97316;
+}
+
+.invalidEditor {
+  border-color: #f87171;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  min-height: 29px;
+  padding: 3px 7px;
+  border-bottom: 1px solid #e2e8f0;
+  background: #f8fafc;
+}
+
+.toolbar button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 23px;
+  height: 22px;
+  padding: 0;
+  border: none;
+  border-radius: 3px;
+  background: transparent;
+  color: #64748b;
+  cursor: not-allowed;
+}
+
+.editor textarea {
+  display: block;
+  width: 100%;
+  min-height: 150px;
+  padding: 12px;
+  border: none;
+  outline: none;
+  resize: vertical;
+  background: #ffffff;
+  color: #334155;
+  font-family: inherit;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.editor textarea:disabled {
+  background: #f8fafc;
+  cursor: not-allowed;
+}
+
+.editorFooter {
+  display: flex;
+  justify-content: flex-end;
+  padding: 4px 9px;
+  color: #94a3b8;
+  font-size: 9px;
+}
+
+/* AI suggestions */
+
+.aiSection {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: -3px;
+}
+
+.aiButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  min-height: 28px;
+  padding: 5px 9px;
+  border: 1px solid #e2e8f0;
+  border-radius: 5px;
+  background: #f8fafc;
+  color: #475569;
+  font-family: inherit;
+  font-size: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.aiButton:hover:not(:disabled) {
+  border-color: #fed7aa;
+  background: #fff7ed;
+  color: #ea580c;
+}
+
+.aiButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.aiSection > span {
+  color: #94a3b8;
+  font-size: 9px;
+}
+
+/* AI feedback panel */
+
+.feedbackPanel {
+  margin-top: 16px;
+  padding: 15px;
+  border: 1px solid #fed7aa;
+  border-radius: 6px;
+  background: #fff7ed;
+}
+
+.feedbackPanel h3 {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin: 0 0 9px;
+  color: #c2410c;
+  font-size: 12px;
+}
+
+.feedbackPanel p,
+.feedbackPanel li {
+  color: #57534e;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.feedbackPanel p {
+  margin: 0 0 8px;
+}
+
+.feedbackPanel ul {
+  display: grid;
+  gap: 5px;
+  margin: 0;
+  padding-left: 17px;
+}
+
+/* API error messages */
+
+.apiError {
+  margin-top: 15px;
+  padding: 10px 12px;
+  border: 1px solid #fecaca;
+  border-radius: 5px;
+  background: #fef2f2;
+  color: #b91c1c;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+/* Bottom actions */
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+  margin-top: 18px;
+  padding-top: 12px;
+  border-top: 1px solid #edf0f4;
+}
+
+.cancelButton {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  background: transparent;
+  color: #475569;
+  font-family: inherit;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.cancelButton:hover:not(:disabled) {
+  background: #f1f5f9;
+}
+
+.submitButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 34px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  background: #f97316;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.submitButton:hover:not(:disabled) {
+  background: #ea580c;
+}
+
+.cancelButton:disabled,
+.submitButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Loading spinner */
+
+.spinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Published confirmation screen */
+
+.publishedCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 218px;
+  margin-top: 25px;
+  padding: 30px 24px;
+  border: 1px solid #e5eaf0;
+  border-radius: 9px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.publishedIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  margin-bottom: 13px;
+  border-radius: 50%;
+  background: #e7f8f1;
+  color: #10b981;
+}
+
+.publishedCard h1 {
+  margin: 0 0 8px;
+  color: #172033;
+  font-size: 19px;
+  font-weight: 750;
+}
+
+.publishedCard > p {
+  max-width: 440px;
+  margin: 0;
+  color: #64748b;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.publishedActions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.backButton,
+.viewButton,
+.askAnotherButton {
+  min-height: 34px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 10px;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.backButton {
+  background: transparent;
+  color: #475569;
+}
+
+.backButton:hover {
+  background: #f1f5f9;
+}
+
+.viewButton {
+  min-width: 120px;
+  background: #f97316;
+  color: #ffffff;
+}
+
+.viewButton:hover {
+  background: #ea580c;
+}
+
+.askAnotherButton {
+  min-width: 120px;
+  background: #e2e8f0;
+  color: #334155;
+}
+
+.askAnotherButton:hover {
+  background: #cbd5e1;
+}
+
+/* Responsive layout */
+
+@media (max-width: 700px) {
+  .page {
+    padding: 22px 14px 35px;
+  }
+
+  .pageHeading h1 {
+    font-size: 22px;
+  }
+
+  .guidelines {
+    padding: 15px;
+  }
+
+  .form {
+    padding: 18px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .publishedActions {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .backButton,
+  .viewButton,
+  .askAnotherButton {
+    width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .actions {
+    gap: 5px;
+  }
+
+  .submitButton {
+    padding: 8px 11px;
+  }
+}
